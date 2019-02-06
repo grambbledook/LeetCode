@@ -1,8 +1,8 @@
-package com.siskey.leetcode.task215
+package com.siskey.leetcode.kotlin.task215
 
 import com.siskey.leetcode.util.timed
 
-class SolutionKt {
+class Solution {
     fun findKthLargest(nums: IntArray, k: Int): Int {
         return quicksort(nums, k)
     }
@@ -27,7 +27,7 @@ class SolutionKt {
     }
 
     private fun partition(nums: IntArray, lo: Int, hi: Int): Int {
-        val p = nums[(lo + hi) / 2]
+        val p = nums[hi]
         var i = lo
         for (j in lo until hi) {
             if (nums[j] >= p) {
@@ -52,7 +52,7 @@ fun main(args: Array<String>) {
     val case2 = listOf(3, 2, 3, 1, 2, 4, 5, 5, 6)
     val case3 = listOf(-1, -1)
 
-    val test = SolutionKt()
+    val test = Solution()
 
     timed("Quicksort-ish First case [$case1]", 5) { test.quicksort(case1.toIntArray(), 2) }
     timed("Quicksort-ish Second case [$case2]", 4) { test.quicksort(case2.toIntArray(), 4) }

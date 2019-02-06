@@ -1,4 +1,4 @@
-package com.siskey.leetcode.task215;
+package  com.siskey.leetcode.java.task215;
 
 import com.siskey.leetcode.util.TimingKt;
 
@@ -10,7 +10,7 @@ public class Solution {
         return quicksort(nums, k);
     }
 
-    public int sdk(int[] nums, int k) {
+    private int sdk(int[] nums, int k) {
         Arrays.sort(nums);
         return nums[nums.length - k];
     }
@@ -51,13 +51,13 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        TimingKt.timed("quicksort-ish 1", 5, () -> Integer.valueOf(new Solution().quicksort(new int[]{3, 2, 1, 5, 6, 4}, 2)));
-        TimingKt.timed("quicksort-ish 1", 4, () -> Integer.valueOf(new Solution().quicksort(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4)));
-        TimingKt.timed("quicksort-ish 2", -1, () -> Integer.valueOf(new Solution().quicksort(new int[]{-1, -1}, 2)));
+        TimingKt.timed("quicksort-ish 1", 5, () -> new Solution().quicksort(new int[]{3, 2, 1, 5, 6, 4}, 2));
+        TimingKt.timed("quicksort-ish 1", 4, () -> new Solution().quicksort(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
+        TimingKt.timed("quicksort-ish 2", -1, () -> new Solution().quicksort(new int[]{-1, -1}, 2));
 
-        TimingKt.timed("arrays.sort 1", 5, () -> Integer.valueOf(new Solution().sdk(new int[]{3, 2, 1, 5, 6, 4}, 2)));
-        TimingKt.timed("arrays.sort 2", 4, () -> Integer.valueOf(new Solution().sdk(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4)));
-        TimingKt.timed("arrays.sort 3", -1, () -> Integer.valueOf(new Solution().sdk(new int[]{-1, -1}, 2)));
+        TimingKt.timed("arrays.sort 1", 5, () -> new Solution().sdk(new int[]{3, 2, 1, 5, 6, 4}, 2));
+        TimingKt.timed("arrays.sort 2", 4, () -> new Solution().sdk(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
+        TimingKt.timed("arrays.sort 3", -1, () -> new Solution().sdk(new int[]{-1, -1}, 2));
     }
 
 
