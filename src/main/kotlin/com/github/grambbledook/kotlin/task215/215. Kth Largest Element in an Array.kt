@@ -1,11 +1,11 @@
 package com.github.grambbledook.kotlin.task215
 
-import com.github.grambbledook.kotlin.common.Quickstort
+import com.github.grambbledook.kotlin.common.Quickselect
 import org.junit.jupiter.api.Assertions
 
 class Solution {
     fun findKthLargest(nums: IntArray, k: Int): Int {
-        Quickstort.sort(nums, lo = 0, hi = nums.size - 1, k = k)
+        Quickselect.sort(nums, lo = 0, hi = nums.size - 1, k = k)
         return nums[k - 1]
     }
 }
