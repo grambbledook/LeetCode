@@ -1,13 +1,12 @@
 package com.github.grambbledook.kotlin.task324
 
 import com.github.grambbledook.kotlin.common.Quickselect
+import org.junit.jupiter.api.Assertions
 
 
 class Solution {
     fun wiggleSort(nums: IntArray) {
         Quickselect.sort(nums, lo = 0, hi = nums.size - 1, k = nums.size / 2 + 1)
-
-        println("Sorted: " + nums.toList())
         return wiggle(nums)
     }
 
@@ -36,7 +35,6 @@ class Solution {
         }
         return array
     }
-
 
     private fun wiggleEven(nums: IntArray, median: Int): IntArray {
         val array = IntArray(nums.size)
@@ -82,13 +80,25 @@ fun main(args: Array<String>) {
 }
 
 private fun exec(nums: List<Int>) {
-    println("Before: $nums")
+    print("Test case : $nums. ")
 
     nums.toIntArray().also {
         Solution().wiggleSort(it)
-        println("After: ${it.toList()}")
+        assertWiggled(it)
     }
 
-    println("\n")
+
+    println("Passed. \n")
 }
 
+fun assertWiggled(nums: IntArray) {
+    var last = nums[0]
+
+    for (i in 1 until nums.size) {
+        val invariant = if (i % 2 == 1) last < nums[i] else last > nums[i]
+        last = nums[i]
+
+        Assertions.assertTrue(invariant, "${nums.toList()}")
+    }
+
+}
