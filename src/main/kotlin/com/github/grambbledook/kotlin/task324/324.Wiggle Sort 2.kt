@@ -49,26 +49,18 @@ class Solution {
             array[l] = nums[median - i - 1]
             l += 2
         }
-        for (i in 0 until median) {
-            array[r] = nums[nums.size - i - 1]
+        for (i in 0 until median - 1) {
+            array[r] = nums[nums.size - median + 1 + i]
             r += 2
         }
         return array
     }
 
 }
-
-/*
-1 1 1 4 6 5
-1 1 2 2 3 3
-
-m h l h l m
-2 3 1 3 1 2
-1 5 1 6 1 4
-
-
- */
-
+// L L L M M H H H
+// 4 5 5 5 5 6 6 6
+// M H L H L H L M
+// 5 6 5 6 5 6 4 5
 
 fun main(args: Array<String>) {
     exec(listOf(1, 5, 1, 1, 6, 4))
