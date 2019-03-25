@@ -51,8 +51,8 @@ class Solution {
             array[l] = nums[median - i - 1]
             l += 2
         }
-        for (i in 0 until median ) {
-            array[r] = nums[nums.size - i -1]
+        for (i in 0 until median) {
+            array[r] = nums[nums.size - i - 1]
             r += 2
         }
         return array
@@ -73,20 +73,12 @@ m h l h l m
 
 
 fun main(args: Array<String>) {
-    val case1 = listOf(1, 5, 1, 1, 6, 4)
-    val case2 = listOf(1, 3, 2, 2, 3, 1)
-    val case3 = listOf(1, 1, 2, 1, 2, 2, 1)
-    val case4 = listOf(1, 3, 2, 2, 2, 1, 1, 3, 1, 1, 2)
-    val case5 = listOf(4, 5, 5, 6)
-    val case6 = listOf(4,5,5,5,5,6,6,6)
-
-    exec(case1)
-    exec(case2)
-    exec(case3)
-    exec(case4)
-    exec(case5)
-    exec(case6)
-
+    exec(listOf(1, 5, 1, 1, 6, 4))
+    exec(listOf(1, 3, 2, 2, 3, 1))
+    exec(listOf(1, 1, 2, 1, 2, 2, 1))
+    exec(listOf(1, 3, 2, 2, 2, 1, 1, 3, 1, 1, 2))
+    exec(listOf(4, 5, 5, 6))
+    exec(listOf(4, 5, 5, 5, 5, 6, 6, 6))
 }
 
 private fun exec(nums: List<Int>) {
