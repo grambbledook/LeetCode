@@ -10,7 +10,7 @@
 - [ ] 149. https://leetcode.com/problems/max-points-on-a-line/
 - [ ] 211. https://leetcode.com/problems/add-and-search-word-data-structure-design/
 - [x] 215. https://leetcode.com/problems/kth-largest-element-in-an-array/
-- [ ] 324. https://leetcode.com/problems/wiggle-sort-ii/
+- [x] 324. https://leetcode.com/problems/wiggle-sort-ii/
 - [ ] 336. https://leetcode.com/problems/palindrome-pairs/description/
 - [ ] 346. https://leetcode.com/problems/top-k-frequent-elements/description/
 - [ ] 954. https://leetcode.com/problems/array-of-doubled-pairs/
