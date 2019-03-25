@@ -1,6 +1,7 @@
-package  com.siskey.leetcode.java.task215;
+package com.github.grambbledook.java.task215;
 
-import com.siskey.leetcode.util.TimingKt;
+
+import org.junit.jupiter.api.Assertions;
 
 import java.util.Arrays;
 
@@ -51,13 +52,9 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        TimingKt.timed("quicksort-ish 1", 5, () -> new Solution().quicksort(new int[]{3, 2, 1, 5, 6, 4}, 2));
-        TimingKt.timed("quicksort-ish 1", 4, () -> new Solution().quicksort(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
-        TimingKt.timed("quicksort-ish 2", -1, () -> new Solution().quicksort(new int[]{-1, -1}, 2));
-
-        TimingKt.timed("arrays.sort 1", 5, () -> new Solution().sdk(new int[]{3, 2, 1, 5, 6, 4}, 2));
-        TimingKt.timed("arrays.sort 2", 4, () -> new Solution().sdk(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
-        TimingKt.timed("arrays.sort 3", -1, () -> new Solution().sdk(new int[]{-1, -1}, 2));
+        Assertions.assertEquals(5, new Solution().quicksort(new int[]{3, 2, 1, 5, 6, 4}, 2));
+        Assertions.assertEquals(4, new Solution().quicksort(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
+        Assertions.assertEquals(-1, new Solution().quicksort(new int[]{-1, -1}, 2));
     }
 
 
