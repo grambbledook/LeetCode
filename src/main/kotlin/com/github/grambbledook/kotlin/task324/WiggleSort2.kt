@@ -1,12 +1,12 @@
 package com.github.grambbledook.kotlin.task324
 
-import com.github.grambbledook.kotlin.common.Quickselect
-import org.junit.jupiter.api.Assertions
+import com.github.grambbledook.kotlin.common.QuickselectSedgwick
 
 
 class Solution {
     fun wiggleSort(nums: IntArray) {
-        Quickselect.sort(nums, lo = 0, hi = nums.size - 1, k = nums.size / 2 + 1)
+//        Quickselect.sort(nums, 0, nums.size -1, nums.size / 2 + 1)
+        QuickselectSedgwick.select(nums, nums.size / 2 + 1)
         return wiggle(nums)
     }
 
@@ -54,40 +54,6 @@ class Solution {
             r += 2
         }
         return array
-    }
-
-}
-
-fun main(args: Array<String>) {
-    exec(listOf(1, 5, 1, 1, 6, 4))
-    exec(listOf(1, 3, 2, 2, 3, 1))
-    exec(listOf(1, 1, 2, 1, 2, 2, 1))
-    exec(listOf(1, 3, 2, 2, 2, 1, 1, 3, 1, 1, 2))
-    exec(listOf(4, 5, 5, 6))
-    exec(listOf(4, 5, 5, 5, 5, 6, 6, 6))
-    exec(listOf(5, 3, 1, 2, 6, 7, 8, 5, 5))
-}
-
-private fun exec(nums: List<Int>) {
-    print("Test case : $nums. ")
-
-    nums.toIntArray().also {
-        Solution().wiggleSort(it)
-        assertWiggled(it)
-    }
-
-
-    println("Passed. \n")
-}
-
-fun assertWiggled(nums: IntArray) {
-    var last = nums[0]
-
-    for (i in 1 until nums.size) {
-        val invariant = if (i % 2 == 1) last < nums[i] else last > nums[i]
-        last = nums[i]
-
-        Assertions.assertTrue(invariant, "${nums.toList()}")
     }
 
 }
