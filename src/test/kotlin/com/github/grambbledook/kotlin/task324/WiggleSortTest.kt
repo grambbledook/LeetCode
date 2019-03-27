@@ -63,6 +63,30 @@ class WiggleSortTest {
         }
     }
 
+    @Test
+    fun `test case 8`() {
+        intArrayOf(1, 1, 2, 2, 2, 1).let {
+            test.wiggleSort(it)
+            assertWiggled(it)
+        }
+    }
+
+    @Test
+    fun `test case 9`() {
+        intArrayOf(2, 3, 3, 2, 2, 2, 1, 1).let {
+            test.wiggleSort(it)
+            assertWiggled(it)
+        }
+    }
+
+    @Test
+    fun `test case 10`() {
+        intArrayOf(3, 3, 3, 2, 2, 2, 3, 2, 1, 1, 2, 1, 2, 3, 3, 3, 1, 2).let {
+            test.wiggleSort(it)
+            assertWiggled(it)
+        }
+    }
+
     fun assertWiggled(nums: IntArray) {
         var last = nums[0]
 
@@ -70,7 +94,7 @@ class WiggleSortTest {
             val invariant = if (i % 2 == 1) last < nums[i] else last > nums[i]
             last = nums[i]
 
-            Assertions.assertTrue(invariant, "${nums.toList()}")
+            Assertions.assertTrue(invariant, "${nums.toList()}. Array size: ${nums.size}")
         }
 
     }
