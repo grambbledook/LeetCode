@@ -49,8 +49,8 @@ class Solution {
             array[l] = nums[i]
             l += 2
         }
-        for (i in 0 until median) {
-            array[r] = nums[nums.size - median + i]
+        for (i in 2 until median + 1) {
+            array[r] = nums[median + i]
             r += 2
         }
         return array
