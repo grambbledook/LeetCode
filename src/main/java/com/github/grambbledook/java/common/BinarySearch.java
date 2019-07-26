@@ -18,7 +18,7 @@ public interface BinarySearch {
         return search(nums, target, Trailing.RIGHT);
     }
 
-    default int search(int[] nums, int target, Trailing left) {
+    default int search(int[] nums, int target, Trailing trailing) {
         int l = 0;
         int r = nums.length - 1;
         int mid = (l + r) / 2;
@@ -27,8 +27,8 @@ public interface BinarySearch {
         while (l <= r) {
             if (nums[mid] == target) {
                 index = mid;
-                if (left == Trailing.DISABLED) break;
-                else if (left == Trailing.LEFT) r = mid - 1;
+                if (trailing == Trailing.DISABLED) break;
+                else if (trailing == Trailing.LEFT) r = mid - 1;
                 else l = mid + 1;
             } else if (nums[mid] < target) {
                 l = mid + 1;

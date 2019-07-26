@@ -1,9 +1,9 @@
 package com.github.grambbledook.java.task31;
 
-import com.github.grambbledook.java.common.Sort;
+import com.github.grambbledook.java.common.Reverse;
 import com.github.grambbledook.java.common.Swap;
 
-public class Solution implements Swap, Sort {
+public class Solution implements Swap, Reverse {
     public void nextPermutation(int[] nums) {
         int idx = -1;
 
@@ -15,7 +15,7 @@ public class Solution implements Swap, Sort {
             }
         }
 
-        sort(nums, idx + 1);
+        reverse(nums, idx + 1);
     }
 
     private boolean hasNextPermutation(int[] nums, int offset) {

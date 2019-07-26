@@ -2,7 +2,7 @@ package com.github.grambbledook.java.common;
 
 public interface QuickselectRecursive extends Quickselect {
 
-    public default int select(int[] nums, int k) {
+    default int select(int[] nums, int k) {
         select(nums, k, 0, nums.length - 1);
         return nums[k - 1];
     }

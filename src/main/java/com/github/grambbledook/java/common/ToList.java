@@ -7,8 +7,8 @@ public interface ToList {
 
     default List<Integer> toList(int[] array) {
         List<Integer> result = new ArrayList<>(array.length);
-        for (int i = 0; i < array.length; i++) {
-            result.add(array[i]);
+        for (int i : array) {
+            result.add(i);
         }
         return result;
     }
