@@ -2,7 +2,10 @@
 
 ## Tasks
 ----
-- [ ] 11. https://leetcode.com/problems/container-with-most-water
+- [x] 3. https://leetcode.com/problems/longest-substring-without-repeating-characters
+- [ ] 5. https://leetcode.com/problems/longest-palindromic-substring
+- [ ] 8. https://leetcode.com/problems/string-to-integer-atoi
+- [x] 11. https://leetcode.com/problems/container-with-most-water
 - [x] 31. https://leetcode.com/problems/next-permutation
 - [x] 34. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 - [x] 46. https://leetcode.com/problems/permutations/
@@ -20,3 +23,4 @@
 - [ ] 617. https://leetcode.com/problems/merge-two-binary-trees/
 - [ ] 954. https://leetcode.com/problems/array-of-doubled-pairs/
 - [ ] 871. https://leetcode.com/problems/minimum-number-of-refueling-stops/
+
