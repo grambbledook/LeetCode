@@ -19,8 +19,8 @@ public class Solution {
                 } else if (candidateRight == -1) {
                     candidateRight = r;
                     l -= 2;
-                } else
-                    return -1;
+                } else return -1;
+
             }
 
             l++;
