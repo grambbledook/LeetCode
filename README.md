@@ -5,7 +5,7 @@
 - [x] 3. https://leetcode.com/problems/longest-substring-without-repeating-characters
 - [ ] 5. https://leetcode.com/problems/longest-palindromic-substring
 - [ ] 5.1 Make palindromic string by dropping one symbol
-- [ ] 8. https://leetcode.com/problems/string-to-integer-atoi
+- [x] 8. https://leetcode.com/problems/string-to-integer-atoi
 - [x] 11. https://leetcode.com/problems/container-with-most-water
 - [x] 31. https://leetcode.com/problems/next-permutation
 - [x] 34. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/

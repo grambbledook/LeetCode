@@ -31,6 +31,7 @@ class LongestPalindromicArgs: ArgumentsProvider {
             Stream.of(
                     Arguments.of("babad", "bab"),
                     Arguments.of("cbbd", "bb"),
+
                     Arguments.of("aabbccbbaa", "aabbccbbaa")
             )
 }
