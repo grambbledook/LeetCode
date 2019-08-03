@@ -13,6 +13,7 @@
 - [ ] 63. https://leetcode.com/problems/unique-paths-ii/
 - [ ] 64. https://leetcode.com/problems/unique-paths/
 - [ ] 106. https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+- [x] 138. https://leetcode.com/problems/copy-list-with-random-pointer/
 - [ ] 146. https://leetcode.com/problems/lru-cache/description/
 - [ ] 149. https://leetcode.com/problems/max-points-on-a-line/
 - [ ] 211. https://leetcode.com/problems/add-and-search-word-data-structure-design/
