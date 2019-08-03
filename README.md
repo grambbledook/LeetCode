@@ -7,6 +7,7 @@
 - [ ] 5.1 Make palindromic string by dropping one symbol
 - [x] 8. https://leetcode.com/problems/string-to-integer-atoi
 - [x] 11. https://leetcode.com/problems/container-with-most-water
+- [x] 23. https://leetcode.com/problems/merge-k-sorted-lists
 - [x] 31. https://leetcode.com/problems/next-permutation
 - [x] 34. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 - [x] 46. https://leetcode.com/problems/permutations/

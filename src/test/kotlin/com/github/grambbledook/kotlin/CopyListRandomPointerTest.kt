@@ -24,17 +24,21 @@ class CopyListRandomPointerTest {
         val asserted = HashSet<Solution.Node>()
 
         fun assertEquals(head: Solution.Node?, copy: Solution.Node?) {
+
             if (head == null) {
                 Assertions.assertNull(copy)
                 return
             }
+
             if (asserted.contains(head)) return
 
-            Assertions.assertEquals(head?.`val`, copy?.`val`)
+            Assertions.assertEquals(head.`val`, copy?.`val`)
             Assertions.assertNotEquals(System.identityHashCode(head), System.identityHashCode(copy))
-            assertEquals(head?.next, copy?.next)
-            assertEquals(head?.random, copy?.random)
-            asserted.add(head!!)
+
+            asserted.add(head)
+
+            assertEquals(head.next, copy?.next)
+            assertEquals(head.random, copy?.random)
         }
 
         assertEquals(head, copy)

@@ -1,4 +1,4 @@
-package com.github.grambbledook.java.task11.brure;
+package com.github.grambbledook.java.task11.brute;
 
 
 import com.github.grambbledook.java.task11.MaxArea;

@@ -1,7 +1,7 @@
 package com.github.grambbledook.kotlin.task11
 
 import com.github.grambbledook.java.task11.Solution as MaxAreaOptimal
-import com.github.grambbledook.java.task11.brure.Solution as MaxAreaBrute
+import com.github.grambbledook.java.task11.brute.Solution as MaxAreaBrute
 
 
 import com.github.grambbledook.java.task11.MaxArea
