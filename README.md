@@ -4,7 +4,7 @@
 ----
 - [x] 3. https://leetcode.com/problems/longest-substring-without-repeating-characters
 - [ ] 5. https://leetcode.com/problems/longest-palindromic-substring
-- [ ] 5.1 Make palindromic string by dropping one symbol
+- [x] 5.1 Make palindromic string by dropping one symbol
 - [x] 8. https://leetcode.com/problems/string-to-integer-atoi
 - [x] 11. https://leetcode.com/problems/container-with-most-water
 - [x] 23. https://leetcode.com/problems/merge-k-sorted-lists
@@ -22,8 +22,10 @@
 - [x] 324. https://leetcode.com/problems/wiggle-sort-ii/
 - [ ] 336. https://leetcode.com/problems/palindrome-pairs/description/
 - [ ] 346. https://leetcode.com/problems/top-k-frequent-elements/description/
+- [ ] https://leetcode.com/problems/longest-palindromic-subsequence/
 - [ ] 593. https://leetcode.com/problems/valid-square/
 - [ ] 617. https://leetcode.com/problems/merge-two-binary-trees/
+- [ ] 647. https://leetcode.com/problems/palindromic-substrings/
 - [ ] 954. https://leetcode.com/problems/array-of-doubled-pairs/
 - [ ] 871. https://leetcode.com/problems/minimum-number-of-refueling-stops/
 

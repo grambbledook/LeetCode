@@ -3,7 +3,7 @@ package com.github.grambbledook.java.task5;
 
 public class Solution {
 
-    public int makePalindrom(String s) {
+    public int palindromize(String s) {
         int l = 0;
         int r = s.length() - 1;
 

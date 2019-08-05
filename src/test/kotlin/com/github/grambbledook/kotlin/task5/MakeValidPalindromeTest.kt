@@ -20,7 +20,7 @@ class MakeValidPalindromeTest {
     }
 
     private fun doTest(input: String, expected: Int) {
-        val result = test.makePalindrom(input)
+        val result = test.palindromize(input)
         Assertions.assertEquals(expected, result)
     }
 
