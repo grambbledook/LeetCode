@@ -1,7 +1,10 @@
 package com.github.grambbledook.java.task5.longest.brute;
 
 
-public class Solution {
+import com.github.grambbledook.java.task5.longest.LongestPalindromic;
+
+public class Solution implements LongestPalindromic {
+
     public String longestPalindrome(String s) {
         if (s == null || s.isEmpty()) return "";
         if (s.length() == 1) return s;
@@ -20,7 +23,6 @@ public class Solution {
                 }
             }
         }
-
         return s.substring(start, end + 1);
     }
 

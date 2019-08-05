@@ -3,7 +3,7 @@
 ## Tasks
 ----
 - [x] 3. https://leetcode.com/problems/longest-substring-without-repeating-characters
-- [ ] 5. https://leetcode.com/problems/longest-palindromic-substring
+- [x] 5. https://leetcode.com/problems/longest-palindromic-substring
 - [x] 5.1 Make palindromic string by dropping one symbol
 - [x] 8. https://leetcode.com/problems/string-to-integer-atoi
 - [x] 11. https://leetcode.com/problems/container-with-most-water
