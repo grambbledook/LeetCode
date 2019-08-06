@@ -23,7 +23,7 @@
 - [x] 324. https://leetcode.com/problems/wiggle-sort-ii/
 - [ ] 336. https://leetcode.com/problems/palindrome-pairs/description/
 - [ ] 346. https://leetcode.com/problems/top-k-frequent-elements/description/
-- [ ] https://leetcode.com/problems/longest-palindromic-subsequence/
+- [ ] 516. https://leetcode.com/problems/longest-palindromic-subsequence/
 - [ ] 593. https://leetcode.com/problems/valid-square/
 - [ ] 617. https://leetcode.com/problems/merge-two-binary-trees/
 - [ ] 647. https://leetcode.com/problems/palindromic-substrings/
