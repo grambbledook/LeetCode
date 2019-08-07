@@ -11,6 +11,7 @@
 - [x] 31. https://leetcode.com/problems/next-permutation
 - [x] 34. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 - [x] 46. https://leetcode.com/problems/permutations/
+- [x] 54. https://leetcode.com/problems/spiral-matrix/
 - [ ] 63. https://leetcode.com/problems/unique-paths-ii/
 - [ ] 64. https://leetcode.com/problems/unique-paths/
 - [x] 73. https://leetcode.com/problems/set-matrix-zeroes/description/
