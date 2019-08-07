@@ -1,4 +1,4 @@
-package com.github.grambbledook.kotlin
+package com.github.grambbledook.kotlin.task138
 
 import com.github.grambbledook.java.task138.Solution
 import org.junit.jupiter.api.Assertions
