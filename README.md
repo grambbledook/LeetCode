@@ -34,6 +34,7 @@
 - [ ] 617. https://leetcode.com/problems/merge-two-binary-trees/
 - [ ] 647. https://leetcode.com/problems/palindromic-substrings/
 - [x] 867. https://leetcode.com/problems/transpose-matrix/
+- [ ] 883. https://leetcode.com/problems/projection-area-of-3d-shapes/
 - [ ] 871. https://leetcode.com/problems/minimum-number-of-refueling-stops/
 - [ ] 954. https://leetcode.com/problems/array-of-doubled-pairs/
 
