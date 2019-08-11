@@ -2,6 +2,7 @@
 
 ## Tasks
 ----
+- [x] 1. https://leetcode.com/problems/two-sum/
 - [x] 3. https://leetcode.com/problems/longest-substring-without-repeating-characters
 - [x] 5. https://leetcode.com/problems/longest-palindromic-substring
 - [x] 5.1 Make palindromic string by dropping one symbol
@@ -21,6 +22,7 @@
 - [x] 138. https://leetcode.com/problems/copy-list-with-random-pointer/
 - [ ] 146. https://leetcode.com/problems/lru-cache/description/
 - [ ] 149. https://leetcode.com/problems/max-points-on-a-line/
+- [x] 167. https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 - [ ] 211. https://leetcode.com/problems/add-and-search-word-data-structure-design/
 - [x] 215. https://leetcode.com/problems/kth-largest-element-in-an-array/
 - [x] 217. https://leetcode.com/problems/contains-duplicate/
