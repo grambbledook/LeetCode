@@ -2,45 +2,45 @@
 
 ## Tasks
 ----
-- [x] 1. https://leetcode.com/problems/two-sum/
-- [x] 3. https://leetcode.com/problems/longest-substring-without-repeating-characters
-- [x] 5. https://leetcode.com/problems/longest-palindromic-substring
-- [x] 5.1 Make palindromic string by dropping one symbol
-- [x] 7. https://leetcode.com/problems/reverse-integer
-- [x] 8. https://leetcode.com/problems/string-to-integer-atoi
-- [x] 9. https://leetcode.com/problems/palindrome-number
-- [x] 11. https://leetcode.com/problems/container-with-most-water
-- [x] 23. https://leetcode.com/problems/merge-k-sorted-lists
-- [x] 31. https://leetcode.com/problems/next-permutation
-- [x] 34. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-- [x] 46. https://leetcode.com/problems/permutations/
-- [x] 48. https://leetcode.com/problems/rotate-image/
-- [x] 54. https://leetcode.com/problems/spiral-matrix/
-- [ ] 63. https://leetcode.com/problems/unique-paths-ii/
-- [ ] 64. https://leetcode.com/problems/unique-paths/
-- [x] 73. https://leetcode.com/problems/set-matrix-zeroes/description/
-- [x] 79. https://leetcode.com/problems/word-search/
-- [ ] 106. https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
-- [x] 136. https://leetcode.com/problems/single-number/
-- [x] 138. https://leetcode.com/problems/copy-list-with-random-pointer/
-- [ ] 146. https://leetcode.com/problems/lru-cache/description/
-- [ ] 149. https://leetcode.com/problems/max-points-on-a-line/
-- [x] 167. https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-- [x] 189. https://leetcode.com/problems/rotate-array/
-- [ ] 211. https://leetcode.com/problems/add-and-search-word-data-structure-design/
-- [x] 215. https://leetcode.com/problems/kth-largest-element-in-an-array/
-- [x] 217. https://leetcode.com/problems/contains-duplicate/
-- [ ] 219. https://leetcode.com/problems/contains-duplicate-ii/
-- [ ] 220. https://leetcode.com/problems/contains-duplicate-iii/
-- [x] 324. https://leetcode.com/problems/wiggle-sort-ii/
-- [ ] 336. https://leetcode.com/problems/palindrome-pairs/description/
-- [ ] 346. https://leetcode.com/problems/top-k-frequent-elements/description/
-- [ ] 516. https://leetcode.com/problems/longest-palindromic-subsequence/
-- [ ] 593. https://leetcode.com/problems/valid-square/
-- [ ] 617. https://leetcode.com/problems/merge-two-binary-trees/
-- [ ] 647. https://leetcode.com/problems/palindromic-substrings/
-- [x] 867. https://leetcode.com/problems/transpose-matrix/
-- [ ] 883. https://leetcode.com/problems/projection-area-of-3d-shapes/
-- [ ] 871. https://leetcode.com/problems/minimum-number-of-refueling-stops/
-- [ ] 954. https://leetcode.com/problems/array-of-doubled-pairs/
+- [x] 1. [https://leetcode.com/problems/two-sum/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task1)
+- [x] 3. [https://leetcode.com/problems/longest-substring-without-repeating-characters](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task3)
+- [x] 5. [https://leetcode.com/problems/longest-palindromic-substring](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task5)
+- [x] 5.1 [Make palindromic string by dropping one symbol](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task5)
+- [x] 7. [https://leetcode.com/problems/reverse-integer](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task7)
+- [x] 8. [https://leetcode.com/problems/string-to-integer-atoi](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task8)
+- [x] 9. [https://leetcode.com/problems/palindrome-number](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task9)
+- [x] 11. [https://leetcode.com/problems/container-with-most-water](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task11)
+- [x] 23. [https://leetcode.com/problems/merge-k-sorted-lists](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task23)
+- [x] 31. [https://leetcode.com/problems/next-permutation](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task31)
+- [x] 34. [https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task34)
+- [x] 46. [https://leetcode.com/problems/permutations/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task46)
+- [x] 48. [https://leetcode.com/problems/rotate-image/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task48)
+- [x] 54. [https://leetcode.com/problems/spiral-matrix/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task54)
+- [ ] 63. [https://leetcode.com/problems/unique-paths-ii/]
+- [ ] 64. [https://leetcode.com/problems/unique-paths/]
+- [x] 73. [https://leetcode.com/problems/set-matrix-zeroes/description/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task73)
+- [x] 79. [https://leetcode.com/problems/word-search/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task79)
+- [ ] 106. [https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/]
+- [x] 136. [https://leetcode.com/problems/single-number/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task136)
+- [x] 138. [https://leetcode.com/problems/copy-list-with-random-pointer/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task138)
+- [ ] 146. [https://leetcode.com/problems/lru-cache/description/]
+- [ ] 149. [https://leetcode.com/problems/max-points-on-a-line/]
+- [x] 167. [https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task169)
+- [x] 189. [https://leetcode.com/problems/rotate-array/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task189)
+- [ ] 211. [https://leetcode.com/problems/add-and-search-word-data-structure-design/]
+- [x] 215. [https://leetcode.com/problems/kth-largest-element-in-an-array/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task215)
+- [x] 217. [https://leetcode.com/problems/contains-duplicate/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task217)
+- [ ] 219. [https://leetcode.com/problems/contains-duplicate-ii/]
+- [ ] 220. [https://leetcode.com/problems/contains-duplicate-iii/]
+- [x] 324. [https://leetcode.com/problems/wiggle-sort-ii/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task324)
+- [ ] 336. [https://leetcode.com/problems/palindrome-pairs/description/]
+- [ ] 346. [https://leetcode.com/problems/top-k-frequent-elements/description/]
+- [ ] 516. [https://leetcode.com/problems/longest-palindromic-subsequence/]
+- [ ] 593. [https://leetcode.com/problems/valid-square/]
+- [ ] 617. [https://leetcode.com/problems/merge-two-binary-trees/]
+- [ ] 647. [https://leetcode.com/problems/palindromic-substrings/]
+- [x] 867. [https://leetcode.com/problems/transpose-matrix/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task867)
+- [ ] 883. [https://leetcode.com/problems/projection-area-of-3d-shapes/]
+- [ ] 871. [https://leetcode.com/problems/minimum-number-of-refueling-stops/]
+- [ ] 954. [https://leetcode.com/problems/array-of-doubled-pairs/]
 
