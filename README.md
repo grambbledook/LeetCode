@@ -21,6 +21,7 @@
 - [x] 73. https://leetcode.com/problems/set-matrix-zeroes/description/
 - [x] 79. https://leetcode.com/problems/word-search/
 - [ ] 106. https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+- [x] 136. https://leetcode.com/problems/single-number/
 - [x] 138. https://leetcode.com/problems/copy-list-with-random-pointer/
 - [ ] 146. https://leetcode.com/problems/lru-cache/description/
 - [ ] 149. https://leetcode.com/problems/max-points-on-a-line/
