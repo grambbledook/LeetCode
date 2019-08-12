@@ -18,6 +18,7 @@
 - [x] 54. [https://leetcode.com/problems/spiral-matrix/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task54)
 - [ ] 63. [https://leetcode.com/problems/unique-paths-ii/]
 - [ ] 64. [https://leetcode.com/problems/unique-paths/]
+- [x] 70. [https://leetcode.com/problems/climbing-stairs/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task70)
 - [x] 73. [https://leetcode.com/problems/set-matrix-zeroes/description/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task73)
 - [x] 79. [https://leetcode.com/problems/word-search/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task79)
 - [ ] 106. [https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/]
