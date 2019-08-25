@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
+
     public int[] twoSum(int[] nums, int target) {
 
         Map<Integer, Integer> sums = new HashMap<>();
@@ -16,7 +17,7 @@ public class Solution {
             Integer j = sums.get(target - nums[i]);
 
             if (j != null && i != j) {
-                return new int[]{i + 1, j + 1};
+                return new int[]{i, j};
             }
         }
 

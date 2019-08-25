@@ -15,6 +15,7 @@
 - [x] 34. [https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task34)
 - [x] 46. [https://leetcode.com/problems/permutations/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task46)
 - [x] 48. [https://leetcode.com/problems/rotate-image/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task48)
+- [x] 53. [https://leetcode.com/problems/maximum-subarray/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task53)
 - [x] 54. [https://leetcode.com/problems/spiral-matrix/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task54)
 - [ ] 63. [https://leetcode.com/problems/unique-paths-ii/]
 - [ ] 64. [https://leetcode.com/problems/unique-paths/]
