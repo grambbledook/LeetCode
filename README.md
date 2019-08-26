@@ -17,6 +17,7 @@
 - [x] 48. [https://leetcode.com/problems/rotate-image/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task48)
 - [x] 53. [https://leetcode.com/problems/maximum-subarray/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task53)
 - [x] 54. [https://leetcode.com/problems/spiral-matrix/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task54)
+- [x] 55. [https://leetcode.com/problems/jump-game/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task55)
 - [ ] 63. [https://leetcode.com/problems/unique-paths-ii/]
 - [ ] 64. [https://leetcode.com/problems/unique-paths/]
 - [x] 70. [https://leetcode.com/problems/climbing-stairs/](https://github.com/grambbledook/LeetCode/tree/master/src/main/java/com/github/grambbledook/java/task70)
