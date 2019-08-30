@@ -14,7 +14,7 @@ class SerializeBinaryTreeTest {
         val input = null
         val result = codec.serialize(input)
 
-        Assertions.assertEquals("", result)
+        Assertions.assertEquals("null", result)
     }
 
     @Test
@@ -22,7 +22,7 @@ class SerializeBinaryTreeTest {
         val input = tree(1)
         val result = codec.serialize(input)
 
-        Assertions.assertEquals("0,1,1,2", result)
+        Assertions.assertEquals("1 null null", result.trim())
     }
 
     @Test
@@ -30,7 +30,7 @@ class SerializeBinaryTreeTest {
         val input = tree(1).left { tree(2) }.right { tree(3) }
         val result = codec.serialize(input)
 
-        Assertions.assertEquals("0,1,1,2 2,3,3,4 1,2,5,6", result)
+        Assertions.assertEquals("1 2 null null 3 null null", result.trim())
     }
 
 
@@ -38,7 +38,7 @@ class SerializeBinaryTreeTest {
     fun `test case 3`() {
         val input = tree(1).left { tree(2) }.right { tree(3).left { tree(4) }.right { tree(5) } }
         val result = codec.serialize(input)
-        Assertions.assertEquals("0,1,1,2 2,3,3,4 4,5,5,6 3,4,7,8 1,2,9,10", result)
+        Assertions.assertEquals("1 2 null null 3 4 null null 5 null null", result.trim())
 
     }
 
@@ -46,7 +46,7 @@ class SerializeBinaryTreeTest {
     fun `test case 4`() {
         val input = tree(5).left { tree(2) }.right { tree(3).left { tree(2).left{tree(3)}.right{tree(1)} }.right { tree(4) } }
         val result = codec.serialize(input)
-        Assertions.assertEquals("0,5,1,2 2,3,3,4 4,4,5,6 3,2,7,8 8,1,9,10 7,3,11,12 1,2,13,14", result)
+        Assertions.assertEquals("5 2 null null 3 2 3 null null 1 null null 4 null null", result.trim())
 
     }
 
