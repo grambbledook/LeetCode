@@ -1,6 +1,8 @@
 package com.github.grambbledook.java.task297;
 
 
+import com.github.grambbledook.java.common.TreeNode;
+
 public class Codec {
     private static final String NULL = "null";
     private static final String SEPARATOR = " ";

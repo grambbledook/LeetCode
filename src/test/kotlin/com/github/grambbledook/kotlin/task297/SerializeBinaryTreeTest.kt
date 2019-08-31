@@ -1,7 +1,9 @@
 package com.github.grambbledook.kotlin.task297
 
 import com.github.grambbledook.java.task297.Codec
-import com.github.grambbledook.java.task297.TreeNode
+import com.github.grambbledook.kotlin.common.tree
+import com.github.grambbledook.kotlin.common.left
+import com.github.grambbledook.kotlin.common.right
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -48,18 +50,6 @@ class SerializeBinaryTreeTest {
         val result = codec.serialize(input)
         Assertions.assertEquals("5 2 null null 3 2 3 null null 1 null null 4 null null", result.trim())
 
-    }
-
-    private fun tree(value: Int): TreeNode {
-        return TreeNode(value)
-    }
-
-    fun TreeNode.left(f: () -> TreeNode): TreeNode {
-        return this.apply { this.left = f() }
-    }
-
-    fun TreeNode.right(f: () -> TreeNode): TreeNode {
-        return this.apply { right = f() }
     }
 
 }

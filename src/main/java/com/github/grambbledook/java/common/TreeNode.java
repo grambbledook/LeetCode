@@ -1,4 +1,4 @@
-package com.github.grambbledook.java.task297;
+package com.github.grambbledook.java.common;
 
 public class TreeNode {
     public int val;
