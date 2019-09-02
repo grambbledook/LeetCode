@@ -16,7 +16,7 @@ class SerializeBinaryTreeTest {
         val input = null
         val result = codec.serialize(input)
 
-        Assertions.assertEquals("null", result)
+        Assertions.assertEquals("null", result.trim())
     }
 
     @Test

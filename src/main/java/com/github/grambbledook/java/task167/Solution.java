@@ -7,15 +7,20 @@ public class Solution {
         int l = 0;
         int r = nums.length - 1;
 
+        int[] result = {-1, -1};
         while (l < r) {
             int current = nums[l] + nums[r];
 
-            if (target == current) break;
-            else if (target > current) l++;
-            else r--;
+            if (target > current) l++;
+            else if (target < current) r--;
+            else {
+                result[0] = l + 1;
+                result[1] = r + 1;
+                break;
+            }
         }
 
-        return new int[]{l + 1, r + 1};
+        return result;
     }
 
 }
