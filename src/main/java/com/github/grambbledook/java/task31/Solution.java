@@ -1,39 +1,47 @@
 package com.github.grambbledook.java.task31;
 
-import com.github.grambbledook.java.common.Reverse;
-import com.github.grambbledook.java.common.Swap;
+public class Solution {
 
-public class Solution implements Swap, Reverse {
     public void nextPermutation(int[] nums) {
-        int idx = -1;
+        int offset = -1;
 
         for (int i = nums.length - 2; i >= 0; i--) {
             if (hasNextPermutation(nums, i)) {
-                idx = i;
-                nextPermutation(nums, idx);
+                nextPermutation(nums, i);
+                offset = i;
                 break;
             }
         }
 
-        reverse(nums, idx + 1);
+        reverse(nums, offset);
     }
 
-    private boolean hasNextPermutation(int[] nums, int offset) {
-        return nums[offset] < nums[offset + 1];
+    private boolean hasNextPermutation(int[] nums, int i) {
+        return nums[i] < nums[i + 1];
     }
 
     private void nextPermutation(int[] nums, int offset) {
-        int nextGreater = findNextGreaterElement(nums, offset);
-        swap(nums, offset, nextGreater);
+        int next = offset;
+
+        for (int i = offset + 1; i < nums.length; i++) {
+            if (nums[i] > nums[offset]) next = i;
+            else break;
+        }
+
+        swap(nums, offset, next);
     }
 
-    private int findNextGreaterElement(int[] nums, int offset) {
-        for (int i = offset + 1; i <= nums.length - 1; i++) {
-            if (nums[i] <= nums[offset]) {
-                return i - 1;
-            }
-        }
-        return nums.length - 1;
+    private void reverse(int[] nums, int offset) {
+        int l = offset + 1;
+        int r = nums.length - 1;
+
+        while (l < r) swap(nums, l++, r--);
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
     }
 
 }
