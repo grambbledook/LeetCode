@@ -1,8 +1,7 @@
 package com.github.grambbledook.kotlin.task23
 
+import com.github.grambbledook.java.common.ListNode
 import com.github.grambbledook.java.task23.MergeKLists
-import com.github.grambbledook.java.task23.brute.Solution as HeapMerge
-import com.github.grambbledook.java.task23.Solution as PairwiseMerge
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.extension.ExtensionContext
@@ -11,6 +10,8 @@ import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.ArgumentsProvider
 import org.junit.jupiter.params.provider.ArgumentsSource
 import java.util.stream.Stream
+import com.github.grambbledook.java.task23.Solution as PairwiseMerge
+import com.github.grambbledook.java.task23.brute.Solution as HeapMerge
 
 class MergeKListsTest {
 
@@ -22,7 +23,7 @@ class MergeKListsTest {
                 arrayOf(-5), arrayOf(4), arrayOf(-8), arrayOf(),
                 arrayOf(-9, -6, -5, -4, -2, 2, 3), arrayOf(-3, -3, -2, -1, 0)
         )
-        
+
         val result = test.mergeKLists(buildLists(lists))
 
         assertListsEqual(result, merge(lists))
@@ -55,8 +56,8 @@ class MergeKListsTest {
         assertListsEqual(result, merge(lists))
     }
 
-    private fun assertListsEqual(result: MergeKLists.ListNode, merge: List<Int>) {
-        var current: MergeKLists.ListNode? = result
+    private fun assertListsEqual(result: ListNode, merge: List<Int>) {
+        var current: ListNode? = result
 
         val message = "Expected \n$merge\n Actual \n${buildList(result)}"
 
@@ -68,12 +69,12 @@ class MergeKListsTest {
         assertNull(current)
     }
 
-    private fun buildList(result: MergeKLists.ListNode): String {
+    private fun buildList(result: ListNode): String {
         val bldr = StringBuilder()
                 .append("(")
                 .append(result.`val`)
 
-        var node: MergeKLists.ListNode? = result.next
+        var node: ListNode? = result.next
 
         while (node != null) {
             bldr.append(", ")
@@ -89,9 +90,9 @@ class MergeKListsTest {
         return lists.flatten().sorted()
     }
 
-    private fun buildLists(lists: Array<Array<Int>>): Array<out MergeKLists.ListNode>? {
+    private fun buildLists(lists: Array<Array<Int>>): Array<out ListNode>? {
         return lists.map {
-            it.map { MergeKLists.ListNode(it) }
+            it.map { ListNode(it) }
         }.filter {
             it.isNotEmpty()
         }.map {

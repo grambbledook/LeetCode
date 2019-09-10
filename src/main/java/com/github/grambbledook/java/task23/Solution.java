@@ -1,6 +1,8 @@
 package com.github.grambbledook.java.task23;
 
 
+import com.github.grambbledook.java.common.ListNode;
+
 public class Solution implements MergeKLists {
 
     public ListNode mergeKLists(ListNode[] lists) {

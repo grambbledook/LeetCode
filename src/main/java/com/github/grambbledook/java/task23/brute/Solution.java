@@ -1,5 +1,6 @@
 package com.github.grambbledook.java.task23.brute;
 
+import com.github.grambbledook.java.common.ListNode;
 import com.github.grambbledook.java.task23.MergeKLists;
 
 import java.util.Comparator;
