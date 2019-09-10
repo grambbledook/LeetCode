@@ -1,7 +1,6 @@
 package com.github.grambbledook.kotlin.common
 
 import com.github.grambbledook.java.common.TreeNode
-import javax.print.attribute.standard.MediaSize
 
 
 fun tree(value: Int): TreeNode {
