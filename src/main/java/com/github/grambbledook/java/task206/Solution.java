@@ -11,10 +11,10 @@ public class Solution {
         ListNode tail = head.next;
         while (tail != null) {
             ListNode tmp = tail.next;
+
             tail.next = head;
             head = tail;
             tail = tmp;
-
         }
 
         node.next = null;
