@@ -1,38 +1,42 @@
 package com.github.grambbledook.java.task46.recursive;
 
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
+import java.util.Arrays;
 import java.util.List;
 
 public class Solution implements Permutations {
 
-    @Override
+    private List<List<Integer>> results = new ArrayList<>();
+
+    private boolean[] visited;
+    private Integer[] permutation;
+
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
-        LinkedHashSet<Integer> state = new LinkedHashSet<>();
-        permuteInternal(nums, state, result);
-        return result;
+        visited = new boolean[nums.length];
+        permutation = new Integer[nums.length];
+
+        permuteInternal(nums, 0);
+        return results;
     }
 
-    private void permuteInternal(int[] nums, LinkedHashSet<Integer> state, List<List<Integer>> results) {
-        if (state.size() == nums.length) {
-            List<Integer> result = new ArrayList<>(state);
-            results.add(result);
+    private void permuteInternal(int[] nums, int iteration) {
+        if (iteration == nums.length) {
+            results.add(Arrays.asList(permutation.clone()));
             return;
         }
 
-        for (int num : nums) {
-            if (!state.contains(num)) {
-                state.add(num);
-                permuteInternal(nums, state, results);
-                state.remove(num);
-            }
-        }
-    }
+        for (int i= 0; i < nums.length; i++) {
+            if (visited[i]) continue;
 
-    public static void main(String[] args) {
-        List<List<Integer>> list = new Solution().permute(new int[]{1, 2, 3});
-        System.out.println(list);
+            visited[i] = true;
+            permutation[iteration] = nums[i];
+
+            permuteInternal(nums, iteration + 1);
+
+            permutation[iteration] = null;
+            visited[i] = false;
+        }
+
     }
 
 }
