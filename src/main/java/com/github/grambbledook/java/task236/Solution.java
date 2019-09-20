@@ -6,11 +6,14 @@ import java.util.LinkedList;
 
 public class Solution {
 
+    private LinkedList<TreeNode> pathToP;
+    private LinkedList<TreeNode> pathToQ;
+    private LinkedList<TreeNode> path = new LinkedList<>();
+
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || p == null || q == null) return null;
 
-        LinkedList<TreeNode> pathToP = search(root, p);
-        LinkedList<TreeNode> pathToQ = search(root, q);
+        search(root, p.val, q.val);
 
         TreeNode lca = null;
         while (!pathToP.isEmpty() && !pathToQ.isEmpty()) {
@@ -23,22 +26,17 @@ public class Solution {
         return lca;
     }
 
-    private LinkedList<TreeNode> search(TreeNode root, TreeNode p) {
-        LinkedList<TreeNode> path = new LinkedList<>();
-        searchRecursively(root, p, path);
-        return path;
-    }
-
-    private boolean searchRecursively(TreeNode node, TreeNode p, LinkedList<TreeNode> path) {
-        if (node == null) return false;
+    private void search(TreeNode node, int p, int q) {
+        if (node == null) return;
 
         path.add(node);
 
-        if (node.val == p.val) return true;
-        else if (searchRecursively(node.left, p, path)) return true;
-        else if (searchRecursively(node.right, p, path)) return true;
+        if (node.val == p) pathToP = new LinkedList<>(path);
+        if (node.val == q) pathToQ = new LinkedList<>(path);
+
+        search(node.left, p, q);
+        search(node.right, p, q);
 
         path.removeLast();
-        return false;
     }
 }
