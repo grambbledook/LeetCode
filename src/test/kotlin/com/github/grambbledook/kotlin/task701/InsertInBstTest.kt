@@ -1,4 +1,4 @@
-package task701
+package com.github.grambbledook.kotlin.task701
 
 import com.github.grambbledook.java.task701.Solution
 import com.github.grambbledook.kotlin.common.left
