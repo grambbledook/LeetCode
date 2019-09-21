@@ -2,41 +2,27 @@ package com.github.grambbledook.java.task236;
 
 import com.github.grambbledook.java.common.TreeNode;
 
-import java.util.LinkedList;
 
 public class Solution {
 
-    private LinkedList<TreeNode> pathToP;
-    private LinkedList<TreeNode> pathToQ;
-    private LinkedList<TreeNode> path = new LinkedList<>();
+    private TreeNode lca;
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || p == null || q == null) return null;
 
         search(root, p.val, q.val);
 
-        TreeNode lca = null;
-        while (!pathToP.isEmpty() && !pathToQ.isEmpty()) {
-            TreeNode l = pathToP.poll();
-            TreeNode r = pathToQ.poll();
-
-            if (l == r) lca = l;
-            else break;
-        }
         return lca;
     }
 
-    private void search(TreeNode node, int p, int q) {
-        if (node == null) return;
+    private boolean search(TreeNode node, int p, int q) {
+        if (node == null) return false;
 
-        path.add(node);
+        int left = search(node.left, p, q) ? 1 : 0;
+        int right = search(node.right, p, q) ? 1 : 0;
+        int mid = (node.val == p || node.val == q) ? 1 : 0;
 
-        if (node.val == p) pathToP = new LinkedList<>(path);
-        if (node.val == q) pathToQ = new LinkedList<>(path);
-
-        search(node.left, p, q);
-        search(node.right, p, q);
-
-        path.removeLast();
+        if (left + mid + right >= 2) lca = node;
+        return (left + mid + right > 0);
     }
 }
