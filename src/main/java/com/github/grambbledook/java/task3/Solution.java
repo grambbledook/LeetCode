@@ -1,28 +1,27 @@
 package com.github.grambbledook.java.task3;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
 
     public int lengthOfLongestSubstring(String s) {
-        int l = 0;
-        int r = 0;
-
+        if (s == null || s.length() == 0) return 0;
         int max = 0;
 
-        int length = s.length();
-        Set<Character> state = new HashSet<>();
-        while (l < length && r < length) {
+        int l = 0;
 
-            if (!state.contains(s.charAt(l))) {
-                state.add(s.charAt(l++));
-                max = Math.max(max, state.size());
-            } else {
-                state.remove(s.charAt(r++));
-            }
+        Map<Character, Integer> state = new HashMap<>();
+        for (int r = 0; r < s.length(); r++) {
+
+            char key = s.charAt(r);
+            if (state.containsKey(key)) l = Math.max(state.get(key), l);
+
+            max = Math.max(max, r - l + 1);
+            state.put(key, r + 1);
         }
-        return Math.max(max, state.size());
+
+        return max;
     }
 
 }

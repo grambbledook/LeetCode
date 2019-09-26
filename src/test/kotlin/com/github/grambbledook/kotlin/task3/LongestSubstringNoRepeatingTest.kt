@@ -10,7 +10,7 @@ class LongestSubstringNoRepeatingTest {
 
     @Test
     fun `test case 1`() {
-        doTest("abcabcbb", 3)
+        doTest("abcabcdabcde", 5)
     }
 
     @Test
@@ -41,6 +41,11 @@ class LongestSubstringNoRepeatingTest {
     @Test
     fun `test case 7`() {
         doTest("123453678", 6)
+    }
+
+    @Test
+    fun `test case 8`() {
+        doTest("tmmzuxt", 5)
     }
 
     private fun doTest(input: String, expected: Int) {
