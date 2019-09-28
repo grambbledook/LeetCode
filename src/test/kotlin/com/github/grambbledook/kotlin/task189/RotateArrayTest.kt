@@ -11,7 +11,7 @@ class RotateArrayTest {
     fun `test case 1`() {
         val ints = intArrayOf(1, 2, 3, 4, 5, 6, 7)
         test.rotate(ints, 3)
-        Assertions.assertArrayEquals(intArrayOf(5,6,7,1,2,3,4), ints)
+        Assertions.assertArrayEquals(intArrayOf(5, 6, 7, 1, 2, 3, 4), ints)
     }
 
     @Test
@@ -27,4 +27,12 @@ class RotateArrayTest {
         test.rotate(ints, 2)
         Assertions.assertArrayEquals(intArrayOf(-1), ints)
     }
+
+    @Test
+    fun `test case 4`() {
+        val ints = intArrayOf(1, 2, 3, 4, 5, 6, 7)
+        test.rotate(ints, 10)
+        Assertions.assertArrayEquals(intArrayOf(5, 6, 7, 1, 2, 3, 4), ints)
+    }
+
 }

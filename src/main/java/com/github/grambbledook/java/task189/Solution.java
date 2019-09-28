@@ -3,10 +3,9 @@ package com.github.grambbledook.java.task189;
 public class Solution {
 
     public void rotate(int[] nums, int k) {
-        if (nums.length == 1 || nums.length == k) return;
-        if (k > nums.length) k = k - nums.length;
+        if (nums == null || nums.length == 0 || k == 0 || k == nums.length) return;
 
-        int offset = nums.length - k;
+        int offset = Math.abs(nums.length - k % nums.length);
 
         reverse(nums, 0, offset - 1);
         reverse(nums, offset, nums.length - 1);
