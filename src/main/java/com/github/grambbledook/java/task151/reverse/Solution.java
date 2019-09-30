@@ -7,25 +7,26 @@ public class Solution implements ReverseString {
     private static final char SPACE = ' ';
     private static final String EMPTY = "";
 
+    private int end;
     private char[] data;
 
     public String reverseWords(String s) {
         if (s == null || s.length() == 0) return s;
         data = s.toCharArray();
 
-        int end = removeWhiteSpaces();
+        removeWhiteSpaces();
 
         if (end != -1) {
             reverse(0, end);
-            reverseWords(end);
+            reverseWords();
 
-            return makeString(end);
+            return makeString();
         }
 
         return EMPTY;
     }
 
-    private int removeWhiteSpaces() {
+    private void removeWhiteSpaces() {
         int l = -1;
         int r = 0;
 
@@ -38,7 +39,7 @@ public class Solution implements ReverseString {
         }
 
         if (l > 0 && data[l] == SPACE) l--;
-        return l;
+        end = l;
     }
 
     private void reverse(int l, int r) {
@@ -52,11 +53,11 @@ public class Solution implements ReverseString {
         }
     }
 
-    private void reverseWords(int end) {
+    private void reverseWords() {
         int l = 0;
         int r = 0;
 
-        while ((r <= end)) {
+        while (r <= end) {
             if (data[r] == SPACE) {
                 reverse(l, r - 1);
                 l = r + 1;
@@ -68,7 +69,7 @@ public class Solution implements ReverseString {
         reverse(l, r - 1);
     }
 
-    private String makeString(int end) {
+    private String makeString() {
         return new String(data, 0, end + 1);
     }
 
