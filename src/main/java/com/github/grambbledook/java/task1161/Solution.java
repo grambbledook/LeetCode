@@ -2,27 +2,35 @@ package com.github.grambbledook.java.task1161;
 
 import com.github.grambbledook.java.common.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Solution {
 
-    private List<Integer> levels = new ArrayList<>();
+    private int[] levels;
 
     public int maxLevelSum(TreeNode root) {
-
+        init(root);
         dfs(root, 0);
-
         return findLevel();
+    }
+
+    private void init(TreeNode node) {
+        int depth = depth(node);
+        levels = new int[depth];
+    }
+
+    private int depth(TreeNode node) {
+        if (node == null) return 0;
+
+        int left = depth(node.left);
+        int right = depth(node.right);
+        return Math.max(left, right) + 1;
     }
 
     private void dfs(TreeNode node, int level) {
         if (node == null) return;
 
-        if (level + 1 > levels.size()) levels.add(0);
-        int sum = node.val + levels.get(level);
+        levels[level] += node.val;
 
-        levels.set(level, sum);
         dfs(node.left, level + 1);
         dfs(node.right, level + 1);
     }
@@ -31,8 +39,8 @@ public class Solution {
         int level = 0;
         int max = Integer.MIN_VALUE;
 
-        for (int i = 0; i < levels.size(); i++) {
-            int value = levels.get(i);
+        for (int i = 0; i < levels.length; i++) {
+            int value = levels[i];
             if (max < value) {
                 max = value;
                 level = i;
