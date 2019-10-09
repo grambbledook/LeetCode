@@ -11,3 +11,15 @@ fun list(vararg value: Int): ListNode {
     return head.next
 
 }
+
+fun ListNode.toIntArray(): IntArray {
+    var node: ListNode? = this
+
+    val list = mutableListOf<Int>()
+    while (node != null) {
+        list.add(node.`val`)
+        node = node.next
+    }
+
+    return list.toIntArray()
+}
