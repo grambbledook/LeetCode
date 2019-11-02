@@ -4,13 +4,16 @@ import com.github.grambbledook.java.common.ListNode;
 import com.github.grambbledook.java.task148.Sort;
 
 public class Solution implements Sort {
+
+    private static final int SIZE = 32;
+
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) return head;
 
         int i;
         ListNode next;
         ListNode result = head;
-        ListNode[] array = new ListNode[32];
+        ListNode[] array = new ListNode[SIZE];
 
         while (result != null) {
             next = result.next;
