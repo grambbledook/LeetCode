@@ -9,17 +9,19 @@ public class Solution {
     }
 
     private boolean isPalindrome0(int x) {
-        int[] array = new int[10];
+        int[] nums = new int[10];
 
         int idx = 0;
-        while (x != 0) {
-            array[idx] = x % 10;
+
+        while (x!= 0) {
+            int digit = x % 10;
+            nums[idx++] = digit;
+
             x /= 10;
-            idx++;
         }
 
-        for (int i = 0; i < idx / 2; i++) {
-            if (array[i] != array[idx - 1 - i]) return false;
+        for (int i =0; i < idx; i++) {
+            if (nums[i] != nums[idx -i -1]) return false;
         }
 
         return true;

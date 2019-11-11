@@ -16,6 +16,19 @@ fun TreeNode.right(f: () -> TreeNode): TreeNode {
 }
 
 
+object Ints {
+
+    fun TreeNode.left(f: () -> Int): TreeNode {
+        return this.apply { this.left = tree(f()) }
+    }
+
+    fun TreeNode.right(f: () -> Int): TreeNode {
+        return this.apply { right = tree(f()) }
+    }
+
+
+}
+
 fun TreeNode.equals(other: Any?): Boolean {
     fun foo(a: TreeNode?, b: TreeNode?) = a?.equals(b) ?: (b == null)
 

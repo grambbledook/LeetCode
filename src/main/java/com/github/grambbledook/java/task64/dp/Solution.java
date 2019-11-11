@@ -13,7 +13,7 @@ public class Solution implements MinPathSum {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                int path = min(cache, i, j);
+                int path = minPath(cache, i, j);
                 cache[i][j] = path + grid[i][j];
             }
         }
@@ -21,10 +21,10 @@ public class Solution implements MinPathSum {
         return cache[n - 1][m - 1];
     }
 
-    private int min(int[][] grid, int i, int j) {
+    private int minPath(int[][] cache, int i, int j) {
         if (i == 0 && j == 0) return 0;
-        int v1 = i > 0 ? grid[i - 1][j] : Integer.MAX_VALUE;
-        int v2 = j > 0 ? grid[i][j - 1] : Integer.MAX_VALUE;
+        int v1 = i > 0 ? cache[i - 1][j] : Integer.MAX_VALUE;
+        int v2 = j > 0 ? cache[i][j - 1] : Integer.MAX_VALUE;
         return Math.min(v1, v2);
     }
 
