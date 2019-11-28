@@ -1,47 +1,53 @@
 package com.github.grambbledook.java.task6;
 
 
-import java.util.ArrayList;
-import java.util.List;
 
-@SuppressWarnings("unchecked")
 public class Solution {
 
-    private static final int UP = -1;
-    private static final int DOWN = 1;
+    private static final int up = -1;
+    private static final int down = 1;
 
-    private int level = -1;
-    private int direction = DOWN;
-    private List<Character>[] rows;
+    private int direction = down;
+    private int pos = -1;
 
     public String convert(String s, int numRows) {
-        if (s == null || s.isEmpty() || numRows == 1) return s;
-        rows = new List[Math.min(numRows, s.length())];
+        if (numRows == 1) return s;
 
-        for (char c: s.toCharArray()) {
-            List<Character> row = nextRow(numRows);
-            row.add(c);
+        StringBuilder[] rows = initRows(numRows);
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            StringBuilder sb = rows[getPosition(numRows)];
+            sb.append(c);
+
         }
 
-        StringBuilder sb = new StringBuilder(s.length());
-        for (List<Character> row : rows) {
-            for (Character c : row) sb.append(c);
+        return toString(rows);
+    }
+
+    private StringBuilder[] initRows(int numRows) {
+        StringBuilder[] rows = new StringBuilder[numRows];
+        for (int i = 0; i < numRows; i++) {
+            rows[i] = new StringBuilder();
+        }
+        return rows;
+    }
+
+    private int getPosition(int border) {
+        if (direction == up && pos == 0) direction = down;
+        else if (direction == down && pos == border -1) direction = up;
+
+        pos += direction;
+        return pos;
+    }
+
+    private String toString(StringBuilder[] rows) {
+        StringBuilder result = new StringBuilder();
+        for (StringBuilder sb: rows) {
+            result.append(sb.toString());
         }
 
-        return sb.toString();
-    }
-
-    private List<Character> nextRow(int numRows) {
-        if (level == 0 && direction == UP) direction = DOWN;
-        else if (level == numRows - 1 && direction == DOWN) direction = UP;
-
-        level += direction;
-        return getNextRow();
-    }
-
-    private List<Character> getNextRow() {
-        if (rows[level] == null) rows[level] = new ArrayList();
-        return rows[level];
+        return result.toString();
     }
 
 }
