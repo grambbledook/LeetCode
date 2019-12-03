@@ -1,4 +1,4 @@
-package task295
+package com.github.grambbledook.kotlin.task295
 
 import com.github.grambbledook.java.task295.MedianFinder
 import org.junit.jupiter.api.Assertions
