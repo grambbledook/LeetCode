@@ -1,7 +1,13 @@
 package com.github.grambbledook.kotlin.common
 
 import com.github.grambbledook.java.common.TreeNode
+import com.github.grambbledook.java.task297.Codec
 
+val codec = Codec()
+
+fun tree(value: String): TreeNode {
+    return codec.deserialize(value)
+}
 
 fun tree(value: Int): TreeNode {
     return TreeNode(value)
