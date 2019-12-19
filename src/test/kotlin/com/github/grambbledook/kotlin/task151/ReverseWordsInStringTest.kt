@@ -3,6 +3,7 @@ package com.github.grambbledook.kotlin.task151
 import com.github.grambbledook.java.task151.ReverseString
 import com.github.grambbledook.java.task151.Solution as StringBuilder
 import com.github.grambbledook.java.task151.reverse.Solution as Reverse
+import com.github.grambbledook.java.task151.another.Solution as DoubleReverse
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.extension.ExtensionContext
 import org.junit.jupiter.params.ParameterizedTest
@@ -74,6 +75,7 @@ class Args: ArgumentsProvider {
     override fun provideArguments(context: ExtensionContext?): Stream<out Arguments> {
         return Stream.of(
                 Arguments.of(StringBuilder()),
+                Arguments.of(DoubleReverse()),
                 Arguments.of(Reverse())
         )
     }
