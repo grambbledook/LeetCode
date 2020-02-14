@@ -1,6 +1,6 @@
 package com.github.grambbledook.kotlin.task215
 
-import com.github.grambbledook.java.task215.Solution
+import com.github.grambbledook.leetcode.task215.Solution
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

@@ -17,8 +17,7 @@ public interface QuickselectIterative extends Quickselect {
     }
 
     private int partition(int[] nums, int l, int r) {
-        int idx = calculatePivotIndex(l, r);
-        int p = nums[idx];
+        int p = nums[r];
         int i = l;
         for (int j = l; j < r; j++) {
             if (nums[j] >= p) {
@@ -28,9 +27,5 @@ public interface QuickselectIterative extends Quickselect {
         }
         swap(nums, i, r);
         return i;
-    }
-
-    private int calculatePivotIndex(int l, int r) {
-        return r;
     }
 }

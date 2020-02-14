@@ -1,4 +1,4 @@
-package com.github.grambbledook.kotlin.tak380
+package com.github.grambbledook.kotlin.task380
 
 import com.github.grambbledook.java.task380.RandomizedSet
 import org.junit.jupiter.api.Assertions

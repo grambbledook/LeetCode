@@ -24,14 +24,14 @@ public class Solution implements MergeKLists {
         int wide = 0;
         int height = 0;
         while (true) {
-            var flag = false;
+            boolean flag = false;
 
             for (int i = 0; i < lists.length; i++) {
                 ListNode list = lists[i];
                 if (list == null) continue;
 
-                 wide++;
-                                    flag = true;
+                wide++;
+                flag = true;
                 index.add(list);
                 lists[i] = list.next;
             }

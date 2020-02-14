@@ -8,13 +8,13 @@ import java.util.Set;
 public class Solution {
     private enum State {NEW, MINUS, DIGIT, WS, PLUS, LETTER}
 
-    private static  final Map<State, Set<State>> allowedTransitions = new HashMap<>() {{
-        put(State.NEW, new HashSet<>(){{add(State.DIGIT);add(State.MINUS);add(State.PLUS);add(State.WS);}});
-        put(State.PLUS, new HashSet<>(){{add(State.DIGIT);}});
-        put(State.MINUS, new HashSet<>(){{add(State.DIGIT);}});
-        put(State.DIGIT, new HashSet<>(){{add(State.DIGIT);}});
-        put(State.WS, new HashSet<>() {{add(State.DIGIT);add(State.MINUS);add(State.PLUS);add(State.WS);}});
-        put(State.LETTER, new HashSet<>());}};
+    private static  final Map<State, Set<State>> allowedTransitions = new HashMap() {{
+        put(State.NEW, new HashSet(){{add(State.DIGIT);add(State.MINUS);add(State.PLUS);add(State.WS);}});
+        put(State.PLUS, new HashSet(){{add(State.DIGIT);}});
+        put(State.MINUS, new HashSet(){{add(State.DIGIT);}});
+        put(State.DIGIT, new HashSet(){{add(State.DIGIT);}});
+        put(State.WS, new HashSet() {{add(State.DIGIT);add(State.MINUS);add(State.PLUS);add(State.WS);}});
+        put(State.LETTER, new HashSet());}};
 
     public int myAtoi(String str) {
         int start = Integer.MAX_VALUE;
