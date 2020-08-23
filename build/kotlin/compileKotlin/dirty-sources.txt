@@ -1,0 +1,13 @@
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\atcoder\e\e.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\atcoder\h\h.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task1129\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task1528\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task153\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task179\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task199\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task215\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task398\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task636\b\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task636\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task686\Solution.kt
+C:\Users\denis\IdeaProjects\LeetCode\src\main\kotlin\com\github\grambbledook\leetcode\task929\Solution.kt
